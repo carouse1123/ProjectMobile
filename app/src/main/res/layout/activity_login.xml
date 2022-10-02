@@ -45,7 +45,7 @@
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/black"
         android:text="Login" />
-    <TextView
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
         android:id="@+id/tvCreateAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,5 +53,6 @@
         android:layout_below="@+id/btnLogin"
         android:text="Create New Account"
         android:layout_marginTop="10dp"
+        android:onClick="clickCreate"
         />
 </RelativeLayout>
