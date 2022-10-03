@@ -56,14 +56,16 @@
         android:drawablePadding="20dp"
         />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etPassword"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/black"
-        android:text="Register" />
+        android:text="Register"
+        android:textColor="@color/white"
+        android:onClick="clickRegister"/>
 
     <TextView
         android:id="@+id/tvBackToLogin"

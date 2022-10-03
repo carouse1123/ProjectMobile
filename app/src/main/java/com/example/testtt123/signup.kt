@@ -18,7 +18,7 @@ class signup : AppCompatActivity() {
         bindingInsert = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(bindingInsert.root)
     }
-    fun Register(v: View){
+    fun clickRegister(v: View){
         val musicClient = musicAPI.create()
         musicClient.registerUser(
             bindingInsert.etFullname.text.toString(),

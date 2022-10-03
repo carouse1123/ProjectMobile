@@ -4,21 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="25dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnNavigate"
+        android:id="@+id/tvLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Login"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tvLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20dp"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/black"
-        android:text="Go"
-        android:onClick="Go"/>
+        android:text="Login" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/btnLogin"
+        android:text="Create New Account"
+        android:layout_marginTop="10dp"
+        android:onClick="clickCreate"
+        />
 </RelativeLayout>
