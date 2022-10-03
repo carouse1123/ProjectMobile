@@ -18,7 +18,7 @@ interface musicAPI {
     @POST("login")
     @FormUrlEncoded
     fun loginUser(@Field("email") email:String,
-                  @Field("password") password:String,): Observable<String>
+                  @Field("password") password:String,): Call<userClass>
 
     companion object{
         fun create():musicAPI{

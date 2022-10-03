@@ -8,7 +8,8 @@ import android.widget.Toast
 import com.example.testtt123.databinding.ActivitySignupBinding
 import retrofit2.Call
 import retrofit2.Callback
-
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 
 class signup : AppCompatActivity() {
@@ -20,7 +21,7 @@ class signup : AppCompatActivity() {
     }
     fun clickRegister(v: View){
         val musicClient = musicAPI.create()
-        musicClient.registerUser(
+            musicClient.registerUser(
             bindingInsert.etFullname.text.toString(),
             bindingInsert.etEmail.text.toString(),
             bindingInsert.etTel.text.toString(),
