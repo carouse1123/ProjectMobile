@@ -28,7 +28,7 @@ class signup : AppCompatActivity() {
             bindingInsert.etPassword.text.toString()).enqueue(object : Callback<userClass> {
             override fun onResponse(call: Call<userClass>, response: retrofit2.Response<userClass>) {
                 if (response.isSuccessful) {
-                    Toast.makeText(applicationContext,"Successfully Inserted", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext,"Register Success", Toast.LENGTH_SHORT).show()
                     finish()
                 }else{
                     Toast.makeText(applicationContext,"Error ", Toast.LENGTH_SHORT).show()

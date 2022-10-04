@@ -17,4 +17,11 @@ data class userClass (
     @SerializedName("tel") val tel:String,
 
     @Expose
+    @SerializedName("password") val password:String){
+}
+
+data class loginClass(
+    @Expose
+    @SerializedName("email") val email:String,
+    @Expose
     @SerializedName("password") val password:String){}

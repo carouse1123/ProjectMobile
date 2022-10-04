@@ -18,7 +18,7 @@ interface musicAPI {
     @POST("login")
     @FormUrlEncoded
     fun loginUser(@Field("email") email:String,
-                  @Field("password") password:String,): Call<userClass>
+                  @Field("password") password:String,): Call<List<loginClass>>
 
     companion object{
         fun create():musicAPI{
