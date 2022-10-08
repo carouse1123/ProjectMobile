@@ -25,3 +25,25 @@ data class loginClass(
     @SerializedName("email") val email:String,
     @Expose
     @SerializedName("password") val password:String){}
+
+data class  ProductClass(
+    @Expose
+    @SerializedName("id") val id: Int,
+
+    @Expose
+    @SerializedName("name") val name:String,
+
+    @Expose
+    @SerializedName("detail") val detail:String,
+
+    @Expose
+    @SerializedName("brand") val brand:String,
+
+    @Expose
+    @SerializedName("price") val price:Double,
+
+    @Expose
+    @SerializedName("image") val image:String,
+
+    @Expose
+    @SerializedName("amount") val amount:Int){}

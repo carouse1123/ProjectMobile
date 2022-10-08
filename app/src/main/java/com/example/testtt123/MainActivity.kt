@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onResponse(call: Call<List<loginClass>>, response: Response<List<loginClass>>) {
                 if (response.isSuccessful){
-                    val intent = Intent(applicationContext, test::class.java)
+                    val intent = Intent(applicationContext, Store::class.java)
                     startActivity(intent)
                 }else{
                     Toast.makeText(applicationContext, response.message(), Toast.LENGTH_LONG).show()

@@ -7,8 +7,14 @@ import retrofit2.http.POST
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.Retrofit
+import retrofit2.http.GET
 
 interface musicAPI {
+    @GET("allproduct")
+    fun retrieveProduct():Call<List<ProductClass>>
+    @GET("detail/{id}")
+    @FormUrlEncoded
+    fun selectProduct():Call<ProductClass>
     @POST("register")
     @FormUrlEncoded
     fun registerUser(
@@ -17,7 +23,6 @@ interface musicAPI {
         @Field("tel") tel:String,
         @Field("password") password:String
     ): Call<userClass>
-
     @POST("login")
     @FormUrlEncoded
     fun loginUser(
