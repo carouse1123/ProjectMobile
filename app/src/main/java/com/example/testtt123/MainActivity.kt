@@ -15,26 +15,10 @@ import retrofit2.Response
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-//    val btnLogin = findViewById(R.id.btnLogin) as Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-//        btnLogin.setOnClickListener{
-
-//            if(email.isEmpty()){
-//                binding.etEmail.error = "Email Required"
-//                binding.etEmail.requestFocus()
-//                return@setOnClickListener
-//            }
-//
-//            if(password.isEmpty()){
-//                binding.etPassword.error = "Password required"
-//                binding.etPassword.requestFocus()
-//                return@setOnClickListener
-//            }
-
         }
     fun clickLogin(v: View){
         val musicClient = musicAPI.create()
@@ -52,8 +36,8 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(applicationContext, response.message(), Toast.LENGTH_LONG).show()
                 }
             }
-    })
-        }
+            })
+    }
     fun clickCreate(v: View){
         val intent = Intent(this, signup::class.java)
         startActivity(intent)

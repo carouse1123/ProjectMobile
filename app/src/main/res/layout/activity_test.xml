@@ -1,9 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".test">
+    android:padding="25dp"
+    tools:context=".DetailActivity">
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="11dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Test"
+        android:textSize="20sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageProduct"
+        android:layout_marginTop="1dp"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        />
+
+
+    <TextView
+        android:id="@+id/prices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brands"
+        android:layout_marginTop="4dp"
+        android:text="Test"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/names"
+        android:layout_marginTop="6dp"
+        android:text="Test"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/DetailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prices"
+        android:layout_marginTop="6dp"
+        android:text="Product Detail:"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DetailText"
+        android:layout_marginTop="6dp"
+        android:text="Test"
+        android:textSize="20sp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Detail"
+        android:layout_alignLeft="@+id/Detail"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/black"
+        android:text="Confrim"
+        android:onClick="clickOrder"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

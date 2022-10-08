@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/tssho/AndroidStudioProjects/testtt123/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1135" />
+        <entry key="..\:/Users/tssho/AndroidStudioProjects/testtt123/app/src/main/res/drawable/shadow.xml" value="0.2455" />
         <entry key="..\:/Users/tssho/AndroidStudioProjects/testtt123/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/tssho/AndroidStudioProjects/testtt123/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/tssho/AndroidStudioProjects/testtt123/app/src/main/res/layout/activity_signup.xml" value="0.25833333333333336" />
