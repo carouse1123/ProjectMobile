@@ -17,7 +17,6 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:theme="@style/AppTheme.NoActionBar"
             android:name=".Store"
             android:exported="false">
             <meta-data
@@ -25,7 +24,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:theme="@style/AppTheme.NoActionBar"
             android:name=".DetailActivity"
             android:exported="false">
             <meta-data
@@ -33,7 +31,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:theme="@style/AppTheme.NoActionBar"
             android:name=".test"
             android:exported="false" />
         <activity

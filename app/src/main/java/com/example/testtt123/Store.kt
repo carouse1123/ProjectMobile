@@ -45,7 +45,7 @@ class Store : AppCompatActivity() {
                             ProductList.add(ProductClass(it.id, it.name,it.detail,it.brand,it.price,it.image,it.amount)) }
 
                         binding.recyclerView.adapter = ProductAdapter(ProductList,applicationContext)
-                        binding.textviewProduct.text = "All Product : "+ ProductList.size.toString()+"Product"
+                        binding.textviewProduct.text = "Product : "+ ProductList.size.toString()+""
                     }
                     override fun onFailure(call: Call<List<ProductClass>>, t: Throwable) {
                         Toast.makeText(applicationContext,"Error onFailure " + t.message, Toast.LENGTH_LONG).show()

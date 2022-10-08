@@ -36,9 +36,9 @@ class ProductAdapter (val items : List<ProductClass>, val context: Context) :
             }
             override fun onBindViewHolder(holder: ProductAdapter.ViewHolder, position: Int) {
                 val binding = holder.binding
-                binding.names.text = "ID: " +items!![position].name
-                binding.brands.text = "Name: " +items!![position].brand
-                binding.prices.text = "Brand: " +items!![position].price
+                binding.names.text = "Name: " +items!![position].name
+                binding.brands.text = "Brand: " +items!![position].brand
+                binding.prices.text = "Price: " +items!![position].price
                 Glide.with(context).load(items!![position].image).into(binding.imageProduct)
             }
 

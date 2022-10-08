@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:text="Login"
         android:textSize="25dp"/>
 
@@ -54,6 +55,7 @@
         android:textAlignment="center"
         android:layout_below="@+id/btnLogin"
         android:text="Create New Account"
+        android:textColor="@color/black"
         android:layout_marginTop="10dp"
         android:onClick="clickCreate"
         />
