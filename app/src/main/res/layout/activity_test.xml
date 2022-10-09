@@ -1,88 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="25dp"
-    tools:context=".DetailActivity">
-    <TextView
-        android:id="@+id/id"
-        android:layout_width="11dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Test"
-        android:textSize="20sp" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imageProduct"
-        android:layout_width="match_parent"
-        android:layout_height="217dp"
-        android:layout_centerHorizontal="true"
-        android:paddingTop="10dp"
-        />
-
-    <TextView
-        android:id="@+id/names"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="15dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/shadow"
+    >
+    <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageProduct"
-        android:layout_marginTop="1dp"
-        android:text="Name"
-        android:textStyle="bold"
-        android:textSize="40sp"
-        />
+        android:padding="5dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/showpro_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingTop="10dp" />
 
+            <TextView
+                android:id="@+id/showpro_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/showpro_img"
+                android:text="ID"
+                android:textSize="23sp" />
+            <TextView
+                android:id="@+id/showpro_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:text="Name"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/showpro_id" />
+            <TextView
+                android:id="@+id/showpro_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="brand"
+                android:textSize="20sp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/showpro_img"
+                android:layout_below="@id/showpro_name" />
 
-    <TextView
-        android:id="@+id/prices"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/brands"
-        android:layout_marginTop="4dp"
-        android:text="Test"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/brands"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/names"
-        android:layout_marginTop="6dp"
-        android:text="Test"
-        android:textSize="20sp" />
-
-
-    <TextView
-        android:id="@+id/DetailText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/prices"
-        android:layout_marginTop="6dp"
-        android:text="Product Detail:"
-        android:textSize="25sp"
-        android:textStyle="bold"/>
-    <TextView
-        android:id="@+id/Detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/DetailText"
-        android:layout_marginTop="6dp"
-        android:text="Test"
-        android:textSize="20sp" />
-
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
-        android:layout_width="345dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Detail"
-        android:layout_alignLeft="@+id/Detail"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@android:color/black"
-        android:text="Confrim"
-        android:onClick="clickOrder"
-        android:textColor="@color/white" />
-
-</RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEditProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="4dp"
+                android:background="#F2E0AE"
+                android:onClick="btnEditProduct"
+                android:padding="5dp"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

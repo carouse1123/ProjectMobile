@@ -1,90 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="25dp"
-    tools:context=".DetailActivity">
-    <TextView
-        android:id="@+id/id"
-        android:layout_width="11dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Test"
-        android:textSize="20sp" />
-
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imageProduct"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    >
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="217dp"
-        android:layout_centerHorizontal="true"
-        android:paddingTop="10dp"
-        />
+        android:layout_height="wrap_content"
+        tools:context=".DetailActivity">
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="11dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Test"
+            android:textSize="20sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
 
-    <TextView
-        android:id="@+id/names"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageProduct"
-        android:layout_marginTop="1dp"
-        android:text="Name"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="40sp"
-        />
+        <ImageView
+            android:id="@+id/imageProduct"
+            android:layout_width="match_parent"
+            android:layout_height="217dp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp" />
 
-
-    <TextView
-        android:id="@+id/prices"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/brands"
-        android:layout_marginTop="4dp"
-        android:text="Test"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/brands"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/names"
-        android:layout_marginTop="6dp"
-        android:textColor="@color/black"
-        android:text="Test"
-        android:textSize="20sp" />
-    <TextView
-        android:id="@+id/DetailText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/prices"
-        android:layout_marginTop="6dp"
-        android:text="Product Detail:"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold"/>
-    <TextView
-        android:id="@+id/Detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/DetailText"
-        android:layout_marginTop="6dp"
-        android:text="Test"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/names"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageProduct"
+            android:layout_marginTop="1dp"
+            android:text="Name"
+            android:fontFamily="@font/kanit_medium"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
-        android:layout_width="345dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Detail"
-        android:layout_alignLeft="@+id/Detail"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@android:color/black"
-        android:text="Confrim"
-        android:onClick="clickOrder"
-        android:textColor="@color/white" />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/prices"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brands"
+            android:layout_marginTop="4dp"
+            android:text="Test"
+            android:fontFamily="@font/kanit_light"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:id="@+id/brands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/names"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black"
+            android:text="Test"
+            android:fontFamily="@font/kanit_light"
+            android:textSize="18sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:id="@+id/DetailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prices"
+            android:layout_marginTop="6dp"
+            android:text="Product Detail:"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kanit_medium"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+        <TextView
+            android:id="@+id/Detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DetailText"
+            android:layout_marginTop="6dp"
+            android:text="Test"
+            android:fontFamily="@font/kanit_light"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Detail"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shadow"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button"
+                android:layout_width="345dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:backgroundTint="@android:color/black"
+                android:fontFamily="@font/kanit_medium"
+                android:onClick="clickOrder"
+                android:text="Confrim"
+                android:textColor="@color/white" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>

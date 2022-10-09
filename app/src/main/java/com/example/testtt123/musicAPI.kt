@@ -12,9 +12,9 @@ import retrofit2.http.GET
 interface musicAPI {
     @GET("allproduct")
     fun retrieveProduct():Call<List<ProductClass>>
-    @GET("detail/{id}")
+    @GET("search/{id}")
     @FormUrlEncoded
-    fun selectProduct():Call<ProductClass>
+    fun searchProduct():Call<ProductClass>
     @POST("register")
     @FormUrlEncoded
     fun registerUser(

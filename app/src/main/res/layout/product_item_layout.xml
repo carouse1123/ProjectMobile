@@ -9,48 +9,42 @@
 
     <androidx.cardview.widget.CardView
     android:id="@+id/cardView"
-    android:layout_width="170dp"
+    android:layout_width="190dp"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="3dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
     app:cardUseCompatPadding="true">
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp">
+
         <ImageView
             android:id="@+id/imageProduct"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:paddingTop="10dp" />
+
         <TextView
             android:id="@+id/names"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageProduct"
-            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/kanit_medium"
             android:text="Test"
             android:textColor="@color/black"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/brands"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/names"
-            android:layout_centerHorizontal="true"
-            android:text="Test"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
+
         <TextView
             android:id="@+id/prices"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/brands"
-            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/names"
+            android:fontFamily="@font/kanit_light"
             android:text="Test"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
     </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>

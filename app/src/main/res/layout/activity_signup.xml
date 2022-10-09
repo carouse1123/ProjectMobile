@@ -13,6 +13,7 @@
         android:textAlignment="center"
         android:text="Register"
         android:textColor="@color/black"
+        android:fontFamily="@font/kanit_medium"
         android:textSize="25dp"/>
     <EditText
         android:id="@+id/etFullname"
@@ -21,6 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Fullname"
+        android:fontFamily="@font/kanit_light"
         android:drawableStart="@drawable/ic_baseline_account_box_24"
         android:drawablePadding="20dp"
         />
@@ -31,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
+        android:fontFamily="@font/kanit_light"
         android:drawableStart="@drawable/ic_baseline_email_24"
         android:drawablePadding="20dp"
         />
@@ -41,6 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Tel"
+        android:fontFamily="@font/kanit_light"
         android:drawableStart="@drawable/ic_baseline_call_24"
         android:drawablePadding="20dp"
         />
@@ -52,6 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
+        android:fontFamily="@font/kanit_light"
         android:inputType="textPassword"
         android:drawableStart="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"
@@ -66,7 +71,8 @@
         android:backgroundTint="@color/black"
         android:text="Register"
         android:textColor="@color/white"
-        android:onClick="clickRegister"/>
+        android:onClick="clickRegister"
+        android:fontFamily="@font/kanit_medium"/>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tvBackToLogin"
@@ -78,5 +84,6 @@
         android:textColor="@color/black"
         android:onClick="clickBack"
         android:layout_marginTop="10dp"
+        android:fontFamily="@font/kanit_light"
         />
 </RelativeLayout>
